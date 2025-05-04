@@ -1,140 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sign Up Form</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      display: flex;
-      min-height: 100vh;
-      background-color: #f5f5f5;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
     
-    .container {
-      display: flex;
-      width: 100%;
-      max-width: 1200px;
-      margin: auto;
-      background: white;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
-    
-    .image-section {
-      flex: 1;
-      background: url('https://via.placeholder.com/600x800') center/cover no-repeat;
-      min-height: 600px;
-    }
-    
-    .form-section {
-      flex: 1;
-      padding: 40px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-    }
-    
-    h2 {
-      font-size: 24px;
-      margin-bottom: 30px;
-      color: #333;
-    }
-    
-    label {
-      display: block;
-      margin-bottom: 8px;
-      font-weight: 500;
-    }
-    
-    input {
-      width: 100%;
-      padding: 12px;
-      margin-bottom: 20px;
-      border: 1px solid #ddd;
-      border-radius: 4px;
-      box-sizing: border-box;
-    }
-    
-    .terms {
-      display: flex;
-      align-items: center;
-      margin: 20px 0;
-    }
-    
-    .terms input {
-      width: auto;
-      margin: 0 10px 0 0;
-    }
-    
-    .actions {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-    
-    .btn-signup {
-      background: #4285f4;
-      color: white;
-      border: none;
-      padding: 12px 30px;
-      border-radius: 4px;
-      cursor: pointer;
-      font-weight: bold;
-    }
-    
-    .signin-link {
-      color: #4285f4;
-      text-decoration: none;
-    }
-    
-    @media (max-width: 768px) {
-      .container {
-        flex-direction: column;
-      }
-      .image-section {
-        min-height: 300px;
-      }
-    }
-  </style>
 </head>
 <body>
-  <div class="container">
-    <div class="image-section">
-      <!-- Image will be displayed here -->
-      <!-- Replace with your actual image path -->
+    <img src="IMG_0563.jpeg" alt="" width="500" height="500">
+    <style type="text/css">
+        
+       
+       
+        body {
+            font-family: arial,sans-serif;
+            background-color: #f5f5f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: "500";
+            width: "500";
+            margin: 0;
+
+        }
+        .signup-container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            width: 350px;
+        }
+        
+        h1 {
+            margin-top: 20;
+            margin-bottom: 25px;
+            font-size: 24px;
+            color: #333;
+        }
+        
+       
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: #555;
+        }
+         .form-group {
+            margin-bottom: 20px;
+        }
+        
+        input {
+            width: 100%;
+            
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;      
+            font-size: 16px;
+            margin: 0px;
+        }
+        input:hover{
+            color: pink;
+
+        }
+        
+        .checkbox-group {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        
+        .checkbox-group input {
+            width: auto;
+            margin-right: 10px;
+        }
+        
+        .button-group {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .btn {
+            padding: 12px 20px;
+            border: none;
+            border-radius: 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        
+        .btn-primary {
+            background-color: hotpink;
+            color: white;
+        }
+        
+        .btn-link {
+            background: none;
+            color: black;
+            
+            padding: 0;
+        }
+    </style>
+   
+    <div class="signup-container">
+        <h1>Sign Up</h1>
+        
+        <div class="form-group">
+            <label for="fullname">Full Name</label>
+            <input type="text" id="fullname" placeholder="Enter name">
+        </div>
+        
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Username@email.com">
+        </div>
+        
+        <div class="form-group">
+            <label for="username">Username</label>
+            <input type="text" id="username" placeholder="Username" >
+        </div>
+        
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" id="password"  placeholder="***********">
+        </div>
+        
+        <div class="form-group">
+            <label for="repeat-password">Repeat Password</label>
+            <input type="password" id="repeat-password"  placeholder="***********">
+        </div>
+        
+        <div class="checkbox-group">
+            <input type="checkbox" id="terms" checked>
+            <label for="terms">I agree to the Terms of User</label>
+        </div>
+        
+        <div class="button-group">
+            <button class="btn btn-primary">Sign Up</button>
+            <button class="btn btn-link">Sign in →</button>
+
+        </div>
     </div>
     
-    <div class="form-section">
-      <h2>Sign Up</h2>
-      
-      <label>Full Name</label>
-      <input type="text" value="Zachary Davis">
-      
-      <label>Email</label>
-      <input type="email" value="zachary-davis@example.com">
-      
-      <label>Username</label>
-      <input type="text" value="zacharydavis">
-      
-      <label>Password</label>
-      <input type="password" value="***********">
-      
-      <label>Repeat Password</label>
-      <input type="password" value="***********">
-      
-      <div class="terms">
-        <input type="checkbox" id="terms" checked>
-        <label for="terms">I agree to the Terms of User</label>
-      </div>
-      
-      <div class="actions">
-        <button class="btn-signup">Sign Up</button>
-        <a href="#" class="signin-link">Sign in →</a>
-      </div>
-    </div>
-  </div>
 </body>
 </html>
