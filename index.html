@@ -7,7 +7,7 @@
     
 </head>
 <body>
-    <img src="IMG_0563.jpeg" alt="" width="500" height="500">
+    <img src="IMG_0563.jpeg" alt="" width="500" height="600">
     <style type="text/css">
         
        
@@ -43,7 +43,7 @@
             display: block;
             margin-bottom: 8px;
             font-weight: bold;
-            color: #555;
+            color: darkgrey;
         }
          .form-group {
             margin-bottom: 20px;
@@ -53,16 +53,24 @@
             width: 100%;
             
             padding: 10px;
-            border: 1px solid #ddd;
-            border-radius: 4px;
-            box-sizing: border-box;      
+            border-top: 0px;
+      border-left: 0px;
+      border-right: 0px;
+      border-bottom: 1px solid;
+            border-radius: 4px;      
             font-size: 16px;
             margin: 0px;
+            background: transparent;
         }
         input:hover{
-            color: pink;
+            color: #b3708f;
 
         }
+        input:focus {
+        border-bottom: 2px solid linear-gradient (to right, #d16ba5, #86a8e7);
+      outline: none;
+    }
+
         
         .checkbox-group {
             display: flex;
@@ -73,6 +81,7 @@
         .checkbox-group input {
             width: auto;
             margin-right: 10px;
+            accent-color: #b3708f;
         }
         
         .button-group {
@@ -107,17 +116,17 @@
         
         <div class="form-group">
             <label for="fullname">Full Name</label>
-            <input type="text" id="fullname" placeholder="Enter name">
+            <input type="text" id="fullname" placeholder="Haji Bhola">
         </div>
         
         <div class="form-group">
             <label for="email">Email</label>
-            <input type="email" id="email" placeholder="Username@email.com">
+            <input type="email" id="email" placeholder="Haji_Bhola@email.com">
         </div>
         
         <div class="form-group">
             <label for="username">Username</label>
-            <input type="text" id="username" placeholder="Username" >
+            <input type="text" id="username" placeholder="hajibhola" >
         </div>
         
         <div class="form-group">
